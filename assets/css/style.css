@@ -295,7 +295,7 @@ header nav{
   width: 100%;
   max-width: 2526px;
   margin: auto;
-  height: 250px; 
+  height: 250px;  
   overflow: hidden;
   position: relative;   
 }
@@ -310,7 +310,7 @@ header nav{
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   position: absolute;
-  left: calc(300px * 8);
+  left: calc(300px * 10);
   animation: scrollLeft 30s linear infinite;
   -webkit-animation: scrollLeft 30s linear infinite;
 
@@ -333,7 +333,7 @@ header nav{
   
   .item{
     width: 190px;
-    left: calc(190px * 8);
+    left: calc(190px * 10);
   }
 
   @keyframes scrollLeft {
