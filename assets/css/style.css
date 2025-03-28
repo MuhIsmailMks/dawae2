@@ -109,11 +109,18 @@ header nav{
 }
 
 /* hero */
-.hero_bg{
+/* .hero_bg{
   background-image: url('../images/banner2.jpg');
   background-position: 0% center;
   background-size: cover;
   background-repeat: no-repeat;
+} */
+
+.bg_hero video{
+  height: 100%;
+  display: flex;
+  position: absolute; 
+  /* left: -20% !important; */
 }
 
 .social_hero a{
@@ -326,6 +333,41 @@ header nav{
 }
 
 
+@media screen and (min-width:1500px) {
+  .bg_hero video{
+    left: 40% !important;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+}
+
+@media screen and (min-width:1200px) and (max-width:1500px) {
+  .bg_hero video{
+    left: 0% !important; 
+}
+}
+
+@media screen and (min-width:1100px) and (max-width: 1200px) {
+  .bg_hero video{ 
+    left: 0% !important;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1100px) {
+  .bg_hero video{ 
+    left: -10% !important;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width: 1000px) {
+  .bg_hero video{ 
+    left: -40% !important;
+  }
+}
+
 @media screen and (max-width:700px) {
   .wrapper{
     height: 170px;
@@ -340,5 +382,9 @@ header nav{
     to{
         left: -200px;
     }
+  }
+
+  .bg_hero video{ 
+    left: -50% !important;
   }
 }
