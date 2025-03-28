@@ -110,8 +110,8 @@ header nav{
 
 /* hero */
 .hero_bg{
-  background-image: url('../images/banner.jpg');
-  background-position: center;
+  background-image: url('../images/banner2.jpg');
+  background-position: 0% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -197,7 +197,7 @@ header nav{
   }
 
   .hero_bg{ 
-    background-position: 70% center;
+    background-position: 50% center;
   }
 
 }
