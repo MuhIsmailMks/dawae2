@@ -132,6 +132,19 @@ header nav{
   width: 50%; 
 }
 
+/* meme */
+.col_meme img{
+  transition: .1s ease-in;
+  -webkit-transition: .1s ease-in;
+  -moz-transition: .1s ease-in;
+  -ms-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+}
+
+.col_meme:hover img{
+  opacity: 0.8;
+}
+
 /* footer */
 .social_footer a{
   height: 70px;
