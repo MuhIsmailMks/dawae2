@@ -14,10 +14,10 @@ html{
 
 body {
   font-family: "Rammetto One", sans-serif;
-  /* background-image: url('../images/bg.jpg') ;
+  background-image: url('../images/bg.jpg') ;
   background-repeat: repeat;
   background-position: 0 0, 50px 50px; 
-  background-size: 150px 150px, 200px 200px; */
+  background-size: 150px 150px, 200px 200px;
 
 }
 
@@ -142,7 +142,7 @@ header nav{
 }
 
 .col_meme:hover img{
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* footer */
@@ -291,13 +291,11 @@ header nav{
 
 
 /* image slider */
-.wrapper{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.wrapper{ 
   width: 100%;
   max-width: 2526px;
   margin: auto;
-  height: 300px; 
+  height: 250px; 
   overflow: hidden;
   position: relative;   
 }
@@ -305,15 +303,20 @@ header nav{
 .item{
   width: 300px;
   height: 100%; 
+  overflow: hidden;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   position: absolute;
-  left: calc(300px * 10);
+  left: calc(300px * 8);
   animation: scrollLeft 30s linear infinite;
   -webkit-animation: scrollLeft 30s linear infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes scrollLeft {
@@ -325,12 +328,12 @@ header nav{
 
 @media screen and (max-width:700px) {
   .wrapper{
-    height: 200px;
+    height: 170px;
   }
   
   .item{
-    width: 200px;
-    left: calc(200px * 10);
+    width: 190px;
+    left: calc(190px * 8);
   }
 
   @keyframes scrollLeft {

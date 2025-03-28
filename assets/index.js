@@ -15,22 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    const musicButton = document.querySelector(".music");
-    const musicIcon = document.querySelector(".music .rotate-animation");
-    const audio = document.getElementById("backgroundMusic");
-    audio.volume = 0.4; 
+    // const musicButton = document.querySelector(".music");
+    // const musicIcon = document.querySelector(".music .rotate-animation");
+    // const audio = document.getElementById("backgroundMusic");
+    // audio.volume = 0.4; 
 
-    musicButton.addEventListener("click", function () {
-        if (audio.paused) {
-            audio.play();
-            musicIcon.classList.add('rotate-animation')
-            musicButton.classList.remove('active')
-        } else {
-            audio.pause();
-            musicIcon.classList.remove('rotate-animation')
-            musicButton.classList.add('active')
-        }
-    });
+    // musicButton.addEventListener("click", function () {
+    //     if (audio.paused) {
+    //         audio.play();
+    //         musicIcon.classList.add('rotate-animation')
+    //         musicButton.classList.remove('active')
+    //     } else {
+    //         audio.pause();
+    //         musicIcon.classList.remove('rotate-animation')
+    //         musicButton.classList.add('active')
+    //     }
+    // });
 
 
     const items = document.querySelectorAll('.wrapper .item');
