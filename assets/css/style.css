@@ -14,10 +14,10 @@ html{
 
 body {
   font-family: "Rammetto One", sans-serif;
-  background-image: url('../images/bg.jpg') ;
+  /* background-image: url('../images/bg.jpg') ;
   background-repeat: repeat;
   background-position: 0 0, 50px 50px; 
-  background-size: 150px 150px, 200px 200px;
+  background-size: 150px 150px, 200px 200px; */
 
 }
 
