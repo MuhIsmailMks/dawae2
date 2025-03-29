@@ -379,6 +379,7 @@ header nav{
   }
 
   .bg_hero video{ 
-    left: -62.5% !important;
+    left: -57.5% !important;
+    top: -10%;
   }
 }
