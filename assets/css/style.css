@@ -108,13 +108,7 @@ header nav{
   -o-transform: scale(1.05);
 }
 
-/* hero */
-/* .hero_bg{
-  background-image: url('../images/banner2.jpg');
-  background-position: 0% center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+/* hero */ 
 
 .bg_hero video{
   height: 100%;
@@ -302,7 +296,7 @@ header nav{
   width: 100%;
   max-width: 2526px;
   margin: auto;
-  height: 250px;  
+  height: 270px;  
   overflow: hidden;
   position: relative;   
 }
@@ -317,7 +311,7 @@ header nav{
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   position: absolute;
-  left: calc(300px * 10);
+  left: calc(300px * 14);
   animation: scrollLeft 30s linear infinite;
   -webkit-animation: scrollLeft 30s linear infinite;
 
@@ -375,7 +369,7 @@ header nav{
   
   .item{
     width: 190px;
-    left: calc(190px * 10);
+    left: calc(190px * 14);
   }
 
   @keyframes scrollLeft {
