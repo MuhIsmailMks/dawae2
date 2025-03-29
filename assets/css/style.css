@@ -156,7 +156,7 @@ header nav{
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  background-color: white;
+  background-color: white; 
 }
 
 .social_footer a img{
