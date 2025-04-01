@@ -15,24 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    // const musicButton = document.querySelector(".music");
-    // const musicIcon = document.querySelector(".music .rotate-animation");
-    // const audio = document.getElementById("backgroundMusic");
-    // audio.volume = 0.4; 
-
-    // musicButton.addEventListener("click", function () {
-    //     if (audio.paused) {
-    //         audio.play();
-    //         musicIcon.classList.add('rotate-animation')
-    //         musicButton.classList.remove('active')
-    //     } else {
-    //         audio.pause();
-    //         musicIcon.classList.remove('rotate-animation')
-    //         musicButton.classList.add('active')
-    //     }
-    // });
-
-
     const items = document.querySelectorAll('.wrapper .item');
     const totalItems = items.length; 
     const animationDuration = 30;  
@@ -55,7 +37,7 @@ document.querySelectorAll(".copy_address").forEach((copybtn) => {
         textSpan.innerHTML = "COPIED";
 
         setTimeout(() => {
-            textSpan.innerHTML = "000000000000000000000000000000000";
+            textSpan.innerHTML = "0xA87914Bb6e1C4E766e199fB5c96FcC2AA26F332E";
         }, 2000);
 
         navigator.clipboard.writeText(addressText);
