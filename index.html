@@ -1,453 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png" 
-      href="./assets/favicon.png"
-    />
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">  
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Rammetto+One&display=swap" rel="stylesheet">
-
-    <!-- AOS scroll effect cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+      <!-- AOS scroll effect cdn --> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>DORORO</title>
-  </head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dawae</title>
+</head>
 
-  <body>
+<body>
+
     
-    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col  ">
-
-      <div class="box-container w-full h-auto bg-white flex items-center flex-col pb-[40px] relative">
-
-          <div class="bg_hero absolute  left-0 top-0 w-[305%] md:w-[500%] min-[1200px]:w-[130%] min-[1500px]:w-[130%] h-full bg-[#D2EAE0] overflow-hidden"> 
-             <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full object-cover lg:w-[200%] xl:w-[200%]  "
-              >
-              <source src="./assets/heroBg.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
-          </div>
-
-          <!-- header navbar -->
-          <header class="w-full h-[80px] relative top-[20px] flex_center z-[999]">
-
-            <nav class="max-w-[2000px] w-[90%] h-full flex_between px-3 lg:px-10 bg-[#fff]" data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="300">
-    
-                <!-- left -->
-                <div class="flex_center gap-2 sm:gap-4 obilex_font ">
-                    <!-- logo -->
-                    <img src="./assets/images/logo.png" alt="" class="h-auto object-contain w-[40px] lg:w-[55px] max-w-[400px] rounded-full border-black border-2" 
-                    >
-                    <p class="text-white medium_stroke text-[18px] lg:text-[23.74px]">$DORORO</p>
-                </div>
-    
-                <!-- right -->
-                <div class="flex_center gap-6" > 
-                    <ul class="flex items-center gap-6 max-lg:hidden">
-                        <li><a href="#home" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#376ABD]">Home</a></li>
-                        <li><a href="#about" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#376ABD]">About us</a></li>
-                        <li><a href="#howtobuy" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#376ABD]">How To Buy</a></li>
-                        <li><a href="#memes" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#376ABD]">Memes</a></li>
-                    </ul>
-    
-                  <!-- buy btn -->
-                  <div class="max-lg:hidden">
-                    <a href="#" class="bg-[#376ABD] duration-200 hover:scale-105 flex_center rounded-md w-auto h-[50.08px] max-lg:h-[45px] relative  border-black border-[2px] px-6"> 
-                        <span class="text-[14px] uppercase text-white">BUY $DORORO</span>
-                      </a>
-                  </div>
-    
-                  <!-- menu btn -->
-                  <div class=" lg:hidden"  >
-                    <div class="menu-button duration-200 hover:scale-105 flex_center flex-col gap-1 rounded-md w-[45px] h-[45px] relative gradient_btn border-black border-[1px]" >
-                        <span class="w-[70%] h-1 bg-black rounded-md"></span>
-                        <span class="w-[70%] h-1 bg-black rounded-md"></span>
-                        <span class="w-[70%] h-1 bg-black rounded-md"></span>
-                    </div>
-                  </div>
-    
-                </div>
-    
-                <!-- menu -->
-                  <div class="menu_container absolute left-[50%] translate-x-[-50%] w-full h-auto bg-[#fff] rounded-lg border-[#376ABD] border-[2px] py-6" >
-                    <ul class="flex_center gap-6 flex-col">
-                      <li><a href="#home" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#376ABD]">Home</a></li>
-                      <li><a href="#about" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#376ABD]">About us</a></li>
-                      <li><a href="#howtobuy" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#376ABD]">How To Buy</a></li>
-                      <li><a href="#memes" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#376ABD]">Memes</a></li>
-                        <li class="flex_center gap-6">
-    
-                            <div >
-                              <a hre="#" class="bg-[#376ABD] duration-200 hover:scale-105 flex_center rounded-md w-auto h-[56.08px] max-lg:h-[45px] relative  border-black border-[2px] px-6"> 
-                                  <span class="text-[14px] uppercase text-white">BUY $DORORO</span>
-                                </a>
-                            </div>
-    
-                        </li>
-                    </ul>
-                  </div>
-    
-            </nav>
-    
-          </header>
-
-          <section class="hero_section relative z-10 hero flex_center flex-col gap-4 w-full pt-[30px]">
-
-              <div class="w-full h-auto flex_center" data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay="300">
-                <img src="./assets/images/hero.webp" alt="hero" class="w-[90%] lg:w-[30%] h-auto max-w-[1000px] max-lg:opacity-0" >
-              </div>
-
-              
-              <div class="links w-full h-auto relative flex items-center flex-wrap gap-[20px] justify-center">
-
-                <div class="social_hero flex_center flex-wrap gap-4" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="200">
-
-                    <a target="_blank" href="https://t.me/baseddororo" class="flex_center cursor-pointer duration-150 hover:scale-105">
-                      <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                        <img src="./assets/images/telegram.svg" alt="telegram">
-                      </span>
-                    </a>
-                    
-                    <a target="_blank" href="https://x.com/BasedDororo" class="flex_center cursor-pointer duration-150 hover:scale-105">
-                      <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                        <img src="./assets/images/twitter2.svg" alt="twitterLogo">
-                      </span>
-                    </a>
-                     
-                </div>
-              
-            </div>
-            
-              <div class="bg-white border-[1px] border-[#376ABD] rounded-full px-7 py-2 flex_center gap-4 max-w-[90%]" data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-delay="300">
-                <p data-set="0xA87914Bb6e1C4E766e199fB5c96FcC2AA26F332E" class="copy-box__text text-ellipsis overflow-hidden max-w-[80%] xl:max-w-[100%]">0xA87914Bb6e1C4E766e199fB5c96FcC2AA26F332E</p>
-                <button class="copy_btn cursor-pointer hover:scale-110 duration-150 copy_address">
-                  <img src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto">
-                </button>
-              </div>
-
-              <div class="btns w-full h-auto relative flex items-center flex-wrap gap-[20px] justify-center  ">
-                <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1800px]:w-[500px]" data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="300" >
-                <button class="uppercase border-2 border-[#376ABD] w-[90%] lg:w-[80%] max-w-[500px] relative bg-[#fff] text-[14px] md:text-[16px] lg:text-[20px] py-4 lg:py-7 rounded-full">
-                    supply: 420,690,000,000
-                </button>
-                </div>
-                <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1800px]:w-[500px]" data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="400">
-                  <button class="uppercase border-2 border-[#376ABD] w-[90%] lg:w-[80%] max-w-[500px] relative bg-[#fff] text-[14px] md:text-[16px] lg:text-[21px] py-4 lg:py-7 rounded-full">
-                    lP : lIQUIDITY BURNT
-                </button>
-                </div>
-                <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1800px]:w-[500px]" data-aos="zoom-in"
-                data-aos-duration="800"
-                data-aos-delay="500" >
-                <button class="uppercase border-2 border-[#376ABD] w-[90%] lg:w-[80%] max-w-[500px] relative bg-[#fff] text-[14px] md:text-[16px] lg:text-[21px] py-4 lg:py-7 rounded-full">
-                    TAX 0%
-                </button>
-                </div>
-              
-            </div>
-
-          </section>
-
-         
-
-      </div>
-
+     <main class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#00FFFF]  ">
       
+      <nav class="relative lg:absolute w-full z-[999] justify-center h-[80px] xl:h-[100px] min-[1800px]:h-[120px] left-0 top-0 max-w-[100%] flex items-center ">
 
-      <div class="box-container relative w-full h-auto bg-[#b6c5df] flex items-center flex-col gap-[50px] ">
- 
+        <div class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px] ">
 
-        <section id="about" class="about relative z-10 flex_center max-xl:flex-col max-xl:gap-6 w-full py-[40px] xl:flex-row overflow-hidden">
-
-          <div class="image relative flex_center xl:w-[30%]" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="300"><img src="./assets/images/newmeme4.jpg" alt="about image" class="w-[70%] lg:w-[80%] h-auto float_animation"></div>
-
-          <div class="content flex_center flex-col text-center gap-4 xl:w-[70%]">
-            <h2 class="text-[#376ABD] medium_shadow medium_stroke text-[8vw] lg:text-[47px]" data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="300">About Dororo</h2>
-            
-            <p class="text-[19px] xl:text-left lg:text-[22px] w-[90%] lg:w-[80%] jua_font max-w-[1200px] " data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="400">
-            Dororo (ドロロ), formerly known as Zeroro (ゼロロ), is a main character in the anime and manga series Keroro Gunso. He is of the rank Lance Corporal (兵長 Heichō)[RANKS] and he is a part of the Keroro Platoon. He is a kindhearted pacifist but also a fierce fighter. He used to be one of the best assassins in the Keron Army, but upon arrival on Earth he chose a life of serenity as a ninja, and swore to protect the planet.
-
-            <br>
-            <br>
-
-            Dororo is the last character to reunite with the Keroro platoon on Earth, acting cold towards them at first, before ultimately making up with Keroro and the others. He normally acts respectful to everyone, regardless of their respective social standing.
- 
-           </p>
-
-              <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1500px]:w-[500px]" data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-delay="500" >
-              <a href="https://dexscreener.com/base/0x302e37382a50106786ef10704a00f3abe5893dec" target="_blank" class="uppercase border-2 border-[#376ABD] w-[50%] lg:w-[70%] max-[1024px]:max-w-[500px] relative bg-[#fff] lg:text-[21px] py-2 rounded-2xl duration-150 hover:opacity-80">
-                  CHART
-              </a>
-              </div>
-
-          </div>
-
-        </section>
-   
-        <div class="w-full h-auto flex_center">
-          <img src="./assets/images/newmeme1.jpg" alt="meme" class="w-[33.33%]">
-          <img src="./assets/images/newmeme2.jpg" alt="meme" class="w-[33.33%]">
-          <img src="./assets/images/newmeme3.jpg" alt="meme" class="w-[33.33%]"> 
-        </div>
-
-      </div>
-     
-      <div class="box-container relative w-full h-auto bg-[#dae4f5] flex items-center flex-col gap-[50px] pt-[100px] pb-4">
-
-        <!-- <div class="bg absolute left-0 top-0 w-full h-full z-0 opacity-50">
-          <img src="./assets/images/binance.webp" alt="binance" class="w-[30%] lg:w-[10%] absolute left-[2%] top-[1%] lg:top-[5%] rotate-12" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="100"
-          >
-          <img src="./assets/images/binance.webp" alt="binance" class="w-[30%] lg:w-[10%] absolute right-[2%] top-[8%] rotate-[20deg]" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="100"
-          >
-          <img src="./assets/images/binance.webp" alt="binance" class="w-[30%] lg:w-[10%] absolute left-[55%] top-[35%] rotate-[-50deg]" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="100"
-          >
-          <img src="./assets/images/binance.webp" alt="binance" class="w-[30%] lg:w-[10%] absolute left-[2%] top-[60%] rotate-45" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="100"
-          >
-        </div> -->
- 
-        <section id="howtobuy" class="relative z-10 howtobuy flex_center flex-wrap-reverse gap-6 w-full">
-          
-          <!-- <div class="bobonbsc w-[93%] md:w-[70%] xl:w-[500px] h-[700px] lg:h-[800px] border-black border-[10px] rounded-xl" data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="300">
-            <iframe  src="https://pancakeswap.finance/?outputCurrency=0x4f863274e5a7bb1958f3d8891d7635c72c44f0fe" width="100%" height="100%" style="border:none;"></iframe>
-          </div> -->
-
-         <div class="relative w-[90%] xl:w-[60%] flex_center flex-col gap-10  ">
-          
-          <div class="howto-content w-full h-auto relative flex_center gap-4 bg-white border-black rounded-xl border-2 flex-col py-10 max-w-[1000px]" data-aos="fade-left"
-          data-aos-duration="800"
-          data-aos-delay="300">
-
-            <h2 class="text-[#376ABD] medium_shadow medium_stroke text-[9vw] lg:text-[47px]">How To Buy</h2>
-
-            <div class="flex flex-col gap-4 w-[90%] jua_font text-[18px] ">
-              <div class="flex gap-3">
-                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
-                <p>Choose a Crypto Exchange or Wallet (MetaMask, Coinbase Wallet.)</p>
-              </div>
-              <div class="flex gap-3">
-                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
-                <p><span class="font-semibold"> Deposit Funds or Buy Crypto</span>,   Buy ETH or USDC first, then swap for BASE.  </p>
-              </div>
-              <div class="flex gap-3">
-                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
-                <p><span class="font-semibold">Purchase BASE Token</span>, Connect your wallet, swap ETH/USDC for BASE using Uniswap or BaseSwap.</p>
-              </div>
-              <div class="flex gap-3">
-                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
-                <p><span class="font-semibold">Secure Your BASE Tokens,</span> Store BASE in MetaMask or Coinbase Wallet.</p>
-              </div> 
-            </div>
-
-          </div>
-
-          <div class="links w-full h-auto flex_center flex-wrap gap-6 lg:gap-11  " data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="300"> 
-            <a target="_blank" href="https://basescan.org/token/0xa87914bb6e1c4e766e199fb5c96fcc2aa26f332e" class="w-[145px] md:w-[125px] h-auto aspect-square rounded-full bg-white flex_center border-[#376ABD] border-[3px]">
-              <span class="flex_center w-[80%] h-[80%] bg-[#376ABD] rounded-full">
-                <img src="./assets/images/basescan.png" alt="basescan" class="w-[70%]"> 
-              </span>
-            </a>
-            <a target="_blank" href="https://dexscreener.com/base/0x302e37382a50106786ef10704a00f3abe5893dec?__cf_chl_rt_tk=Gsjhg.hJfn7GqMvv6J2RUJsEFpTGJDNUzoaT1EVJYPs-1743542497-1.0.1.1-ZjcNQvCF1Kj_60uJ1Uwrq9c14hUQ5ayIudPVha7DiCA" class="w-[145px] md:w-[125px] h-auto aspect-square rounded-full bg-white flex_center border-[#376ABD] border-[3px]">
-              <span class="flex_center w-[80%] h-[80%] bg-[#376ABD] rounded-full">
-                <img src="./assets/images/dexscreen.svg" alt="dexscreen" class="w-[60%]"> 
-              </span>
-            </a>
-            <a target="_blank" href="https://www.dextools.io/app/en/base/pair-explorer/0x302e37382a50106786ef10704a00f3abe5893dec?t=1743542500037" class="w-[145px] md:w-[125px] h-auto aspect-square rounded-full bg-white flex_center border-[#376ABD] border-[3px]">
-              <span class="flex_center w-[80%] h-[80%] bg-[#376ABD] rounded-full">
-                <img src="./assets/images/dextools.png" alt="dextools" class="w-[60%]"> 
-              </span>
-            </a>
-            <a target="_blank" href="https://www.base.org/" class="w-[145px] md:w-[125px] h-auto aspect-square rounded-full bg-white flex_center border-[#376ABD] border-[3px]">
-              <span class="flex_center w-[80%] h-[80%] bg-[#376ABD] rounded-full">
-                <img src="./assets/images/baseChainWhite.png" alt="dextools" class="w-[60%]"> 
-              </span>
-            </a>
-          </div>
-
-         </div>
-
-        </section>
-
-        <section id="memes" class="relative z-10 memes w-full  h-auto flex_center flex-col  ">
-
-          <h2 class="text-[#376ABD] medium_shadow medium_stroke text-[12vw] lg:text-[47px] mb-4" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="300">Memes</h2>
- 
-          <div class="wrapper image_slider">
-            
-            <div class="item newitem1" style="background-color: red;">
-              <img src="./assets/images/newmeme1.jpg" alt="" class="w-full h-full">
-            </div>
-            
-            <div class="item newitem2" style="background-color: rgb(29, 6, 6);">
-              <img src="./assets/images/newmeme2.jpg" alt="" class="w-full h-full">
-            </div>
-            
-            <div class="item newitem3" style="background-color: rgb(105, 94, 94);">
-              <img src="./assets/images/newmeme3.jpg" alt="" class="w-full h-full">
-            </div>
-            
-            <div class="item newitem4" style="background-color: rgb(157, 255, 0);">
-              <img src="./assets/images/newmeme4.jpg" alt="" class="w-full h-full">
-            </div>
-
-            <div class="item item1" style="background-color: red;">
-              <img src="./assets/images/meme1.gif" alt="" class="w-full h-full">
-            </div>
-
-            <div class="item item2" style="background-color: aqua;">
-              <img src="./assets/images/meme2.png" alt="" class="w-full h-full">
-            </div>
-            <div class="item item3" style="background-color: #15ff00;">
-                 <img src="./assets/images/meme3.webp" alt="" class="w-full h-full">
-            </div>
-            <div class="item item4" style="background-color: #00ffaa;">
-                 <img src="./assets/images/meme4.jpg" alt="" class="w-full h-full">
-            </div>
-            <div class="item item5" style="background-color: #ff3300;">
-                 <img src="./assets/images/meme5.webp" alt="" class="w-full h-full">
-            </div>
-            <div class="item item6" style="background-color: rgb(72, 255, 0);">
-                 <img src="./assets/images/meme6.jpg" alt="" class="w-full h-full">
-            </div>
-            <div class="item item7" style="background-color: rgb(255, 255, 255);">
-                 <img src="./assets/images/meme7.jpg" alt="" class="w-auto h-full">
-            </div>
-            <div class="item item8" style="background-color: rgb(248, 248, 248);">
-                 <img src="./assets/images/meme8.jpg" alt="" class="w-auto h-full">
-            </div>
-            <div class="item item9" style="background-color: rgb(248, 248, 248);">
-                 <img src="./assets/images/meme9.jpg" alt="" class="w-auto h-full">
-            </div>
-            <div class="item item10" style="background-color: rgb(248, 248, 248);">
-                 <img src="./assets/images/meme10.jpg" alt="" class="w-auto h-full">
-            </div>
-             
-
-         </div>
-
-       </section>
-
-       <footer class="relative z-10 w-[98%] h-auto bg-[#5e89ce] rounded-2xl border-black border-4 overflow-hidden flex_center flex-col gap-4">
-
-        <div class="image flex_center mt-[20px]">
-          <img src="./assets/images/hero.gif" alt="BOB image" class="w-[70%] md:w-[75%]" data-aos="zoom-in"
+          <!-- logo -->
+          <div class="left flex relative z-10 justify-center items-center" data-aos="fade-right"
           data-aos-duration="800"
           data-aos-delay="200">
-        </div>
 
-        <div class="social_footer flex_center flex-wrap gap-4" data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-delay="200">
-            <a target="_blank" href="https://t.me/baseddororo" class="flex_center cursor-pointer duration-150 hover:scale-105">
-               <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                <img src="./assets/images/telegram.svg" alt="telegram">
-               </span>
-            </a>
-            <a target="_blank" href="https://x.com/BasedDororo" class="flex_center cursor-pointer duration-150 hover:scale-105">
-               <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                <img src="./assets/images/twitter2.svg" alt="twitterLogo">
-               </span>
-            </a>
-            <a target="_blank" href="https://basescan.org/token/0xa87914bb6e1c4e766e199fb5c96fcc2aa26f332e" class="flex_center cursor-pointer duration-150 hover:scale-105">
-               <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                <img src="./assets/images/bscscan_white.svg" alt="bscscan">
-               </span>
-            </a>
-            <a target="_blank" href="https://dexscreener.com/base/0x302e37382a50106786ef10704a00f3abe5893dec?__cf_chl_rt_tk=Gsjhg.hJfn7GqMvv6J2RUJsEFpTGJDNUzoaT1EVJYPs-1743542497-1.0.1.1-ZjcNQvCF1Kj_60uJ1Uwrq9c14hUQ5ayIudPVha7DiCA" class="flex_center cursor-pointer duration-150 hover:scale-105">
-               <span class="w-[80%] h-[80%] bg-[#376ABD] rounded-full flex_center">
-                <img src="./assets/images/dexscreen.svg" alt="dexscreen">
-               </span>
-            </a>
-        </div>
-
-        <!-- links and ca -->
-         <div class="flex_center flex-col gap-4"  data-aos="fade-up"
-         data-aos-duration="800"
-         data-aos-delay="200">
-
-         <div class="linkAnchor flex_center"> 
-          <ul class="flex items-center gap-4 lg:gap-6">
-              <li><a href="#home" class="text-[#fff]  text-[11px] md:text-[14px] duration-300 hover:text-[#376ABD]">Home</a></li>
-              <li><a href="#about" class="text-[#fff]  text-[11px] md:text-[14px] duration-300 hover:text-[#376ABD]">About us</a></li>
-              <li><a href="#howtobuy" class="text-[#fff]  text-[11px] md:text-[14px] duration-300 hover:text-[#376ABD]">How To Buy</a></li>
-              <li><a href="#memes" class="text-[#fff]  text-[11px] md:text-[14px] duration-300 hover:text-[#376ABD]">Memes</a></li>
-          </ul>
-         </div>
-
-          <div class="bg-white border-[1px] border-[#376ABD] rounded-lg px-7 py-2 flex_center gap-4 max-w-[90%]"  >
-            <p data-set="0xA87914Bb6e1C4E766e199fB5c96FcC2AA26F332E" class="copy-box__text text-ellipsis overflow-hidden max-w-[80%] xl:max-w-[100%] max-md:text-[10px]">0xA87914Bb6e1C4E766e199fB5c96FcC2AA26F332E</p>
-            <button class="copy_btn cursor-pointer hover:scale-110 duration-150 copy_address">
-              <img src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto">
-            </button>
-          </div>
-         </div>
- 
-        <div class="relative left-0 bottom-0 w-full h-[55px] bg-[#fff] flex_center">
-          <p class="text-center text-[12px] lg:text-[16px]">DORORO 2025. ALL RIGHTS RESERVED.</p>
-        </div>
-
-       </footer>
-
-      </div>
-
-    </div>
-
-  
-
-    <!-- aos js library animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
-    <script src="./assets/index.js"></script>
+            <div class="logo mr-[1rem] uppercase">
+              <img src="./assets/images/logo.svg" alt="logo" class="w-[100px] md:w-[158px]">
+            </div> 
     
-  </body>
+          </div>
+    
+
+          <!-- social media -->
+          <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]" data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="200">
+
+          <div class="social flex items-center relative  gap-[.5rem]"> 
+
+            <a href="#tele" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px]  pb-2 pr-1">
+              <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
+            </a> 
+
+            <a href="#twitter" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2  ">
+              <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
+            </a> 
+
+            <a href="#dex" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2">
+              <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
+            </a> 
+
+    
+
+          </div>
+          
+          </div>
+
+        </div>
+ 
+	    </nav>
+
+      <section class="hero relative w-full h-auto max-lg:mt-[-5%]">
+        <div class="bg relative w-full h-full left-0
+         top-0">
+         <img src="./assets/images/hero.png" alt="hero image" class="w-full h-full">
+        </div>
+
+        <div class="hero-text2 absolute w-[20%] right-[30%] top-[30%]">
+           <img src="./assets/images/text-hero2.svg" alt="hero-text" class="w-full h-auto">
+        </div>
+
+        <div class="hero-text absolute w-[40%] left-[20%] bottom-[10%]">
+           <img src="./assets/images/hero-text.png" alt="hero-text" class="w-full h-auto">
+        </div>
+
+        <div class="border-hero absolute bottom-0 left-0 z-[99] w-full h-[80px]">   </div>
+
+      </section>
+
+      <section class="about relative w-full h-[500px] lg:h-[800px] min-[1600px]:h-[900px] min-[2000px]:h-[50vw]">
+
+        <div class="absolute content w-[90%] lg:w-[50%] top-[10%] lg:right-[5%] flex flex-col gap-[2vw] max-lg:items-center z-[999]">
+           <img src="./assets/images/ABOUTDAWAE.svg" alt="about dawae" class="w-full md:w-[80%]">
+          <p class="itim-regular text-[20px] lg:text-[2vw] leading-[1.5] max-lg:text-center">DAWAE is not just a coin — it’s a meme-powered movement.Born from the legendary Knuckles meme, we’re here to bring chaos, laughs, and degen energy to Web3.</p>
+          <div class="social flex items-center relative  gap-[.5rem] w-full max-lg:justify-center"> 
+
+            <a href="#tele" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px]  pb-2 pr-1">
+              <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
+            </a> 
+
+            <a href="#twitter" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2  ">
+              <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
+            </a> 
+
+            <a href="#dex" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2">
+              <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
+            </a> 
+
+    
+
+          </div>
+        </div>
+
+        <div class="cloud absolute left-[-5%] bottom-[50%] w-[10%] z-[99]">
+          <img src="./assets/images/cloud.svg" alt="dawae" class="w-full h-auto">
+        </div>
+
+        <div class="dawae absolute left-[2%] bottom-[10%] w-[33%] z-[99]">
+          <img src="./assets/images/dawae-about.png" alt="dawae" class="w-full h-auto">
+        </div>
+
+        <div class="bg absolute bottom-0 left-0 w-full h-auto">
+          <img src="./assets/images/bg-about.png" alt="about bg" class="w-full h-auto">
+        </div>
+
+      </section>
+
+      <section class="tokenomics relative w-full max-md:h-[450px] mt-[-1rem] overflow-hidden z-[99]">
+
+          <div class="bg relative w-full h-full left-0
+                  top-0">
+                  <img src="./assets/images/bg-token.png" alt="token bg image" class="w-full h-full">
+          </div>
+
+          <div class="dawae-down absolute left-[-4%] top-[10%] lg:top-[30%] w-[20%]">
+            <img src="./assets/images/dawae2.png" alt="dawae" class="w-full h-auto">
+          </div>
+
+          <div class="board w-[90%] min-[500px]:w-[70%] sm:w-[67%]  min-[1500px]:w-[63%] min-[1800px]:w-[60%] absolute bottom-[-20%]">
+
+            <div class="flower absolute top-[-5%] left-[22%] w-[25%] z-10">
+              <img src="./assets/images/flower.svg" alt="flower" class="w-full">
+            </div>
+
+            <div class="dawae absolute top-[-5%] right-[0%] w-[40%] z-[1] rotate-[-10deg]">
+              <img src="./assets/images/dawae-about.png" alt="dawae" class="w-full">
+            </div>
+
+            <div class="bg relative w-full h-auto z-[3]">
+              <img src="./assets/images/token-board.png" alt="token" class="w-full">
+            </div>
+
+            <div class="content absolute w-[90%] h-[23%] left-[49.5%] translate-x-[-50%] top-[26%]   rotate-[-1.5deg] flex flex-col justify-between z-10">
+
+              <div class="column w-full h-[45%] flex justify-between">
+                <div class="col w-[33%] flex justify-center flex-col items-center text-[1.6vw]">
+                  <h3>Buy/sell tax</h3>
+                  <p class="opacity-70">0%</p>
+                </div>
+                <div class="col w-[33%] flex justify-center flex-col items-center text-[1.6vw]">
+                  <h3>Liquidity burned</h3>
+                  <p class="opacity-70">100%</p>
+                </div>
+                <div class="col w-[33%] flex justify-center flex-col items-center text-[1.6vw]">
+                  <h3>Ownership</h3>
+                  <p class="opacity-70">Revoked</p>
+                </div>
+              </div>
+
+              <div class="token w-full h-[41%] flex justify-between items-center">
+                 <div class="flex justify-center flex-col pl-[5%]">
+                  <p class="itim-regular uppercase text-[1.6vw] lg:text-[1.2vw]">Contract Address</p>
+                  <span data-set="AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux" class="copy-box__text text-[2.5vw] lg:text-[2vw] min-[1700px]:text-[1.7vw]">AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux</span>
+                 </div>
+                 <button class="copy_address w-[10%] h-full cursor-pointer"></button>
+              </div>
+
+            </div>
+
+          </div>
+
+      </section>
+
+      <footer class="relative w-full h-[350px] lg:h-[900px] mt-[-1rem] flex justify-center items-center">
+
+          <div class="footer-image  absolute w-[85%] h-full z-[99] top-[-10%]">
+                  <img src="./assets/images/footerImage.png" alt="footer bg image" class="w-full object-cover">
+          </div>
+
+          <div class="bg absolute w-full h-full left-0
+                  top-0">
+                  <img src="./assets/images/bg-footer.png" alt="footer bg image" class="w-full h-full">
+          </div>
+
+          <!-- social media -->
+           <div class="social-container absolute   w-full z-[999] justify-center h-auto xl:h-[100px] min-[1800px]:h-[120px] left-0 bottom-0 max-w-[100%] flex items-center max-lg:pt-4">
+
+              <div class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-center md:justify-between flex-wrap w-full max-w-[100%] xl:max-w-[2100px] gap-2">
+
+                <!-- logo -->
+                <div class="left flex relative z-10 justify-center flex-col max-md:items-center max-md:gap-2"  >
+ 
+                  <img src="./assets/images/logo.svg" alt="logo" class="w-[100px] md:w-[158px]">
+
+                  <p class="itim-regular">© DAWAE 2025 - All Rights Reserved </p>
+          
+                </div>
+          
+
+                <!-- social media -->
+                <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]" >
+
+                <div class="social flex items-center relative  gap-[.5rem]"> 
+
+                  <a href="#tele" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px]  pb-2 pr-1">
+                    <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
+                  </a> 
+
+                  <a href="#twitter" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2  ">
+                    <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
+                  </a> 
+
+                  <a href="#dex" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2">
+                    <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
+                  </a> 
+
+          
+
+                </div>
+                
+                </div>
+
+              </div>
+ 
+	         </div>
+
+      </footer>
+
+     </main>
+
+     <!-- aos js library animation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+     //  scroll animation Effect
+    AOS.init({
+        once: true
+    });
+  
+    // copy address
+    const copybtn = document.querySelector(".copy_address");
+    
+     copybtn.addEventListener("click", function() { 
+        let textSpan = document.querySelector('.copy-box__text');
+        let intervalId;
+            let addressText = document.querySelector(".copy-box__text").getAttribute('data-set');
+            textSpan.innerHTML = 'COPIED';
+
+            if (intervalId) {  
+                clearInterval(intervalId);
+            }
+
+            intervalId = setInterval(() => {
+                textSpan.innerHTML = 'AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux'; 
+                clearInterval(intervalId);  
+            }, 2000);
+
+            navigator.clipboard.writeText(addressText);
+        }); 
+
+    </script>
+</body>
 </html>
