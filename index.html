@@ -1,278 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon.png"
+    />
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-      <!-- AOS scroll effect cdn --> 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Dawae</title>
-</head>
+  </head>
 
-<body>
-
-    
-     <main class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#00FFFF]  ">
-      
-      <nav class="relative lg:absolute w-full z-[999] justify-center h-[80px] xl:h-[100px] min-[1800px]:h-[120px] left-0 top-0 max-w-[100%] flex items-center ">
-
-        <div class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px] ">
-
+  <body>
+    <main
+      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#00FFFF]"
+    >
+      <nav
+        class="relative lg:absolute w-full z-[999] justify-center h-[80px] xl:h-[100px] min-[1800px]:h-[120px] left-0 top-0 max-w-[100%] flex items-center"
+      >
+        <div
+          class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px]"
+        >
           <!-- logo -->
-          <div class="left flex relative z-10 justify-center items-center" data-aos="fade-right"
-          data-aos-duration="800"
-          data-aos-delay="200">
-
+          <div
+            class="left flex relative z-10 justify-center items-center"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
             <div class="logo mr-[1rem] uppercase">
-              <img src="./assets/images/logo.svg" alt="logo" class="w-[100px] md:w-[158px]">
-            </div> 
-    
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="w-[100px] md:w-[158px]"
+              />
+            </div>
           </div>
-    
 
           <!-- social media -->
-          <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]" data-aos="fade-left"
-          data-aos-duration="800"
-          data-aos-delay="200">
+          <div
+            class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="social flex items-center relative gap-[.5rem]">
+              <a
+                href="https://web.telegram.org/"
+                target="_blank"
+                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-2 pr-1"
+              >
+                <img
+                  src="./assets/images/telegram.png"
+                  alt="telegram"
+                  class="w-[35%] h-auto object-contain"
+                />
+              </a>
 
-          <div class="social flex items-center relative  gap-[.5rem]"> 
+              <a
+                href="https://x.com"
+                target="_blank"
+                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
+              >
+                <img
+                  src="./assets/images/twitter.png"
+                  alt="twitter"
+                  class="w-[30%] h-auto object-contain"
+                />
+              </a>
 
-            <a href="https://web.telegram.org/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px]  pb-2 pr-1">
-              <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
-            </a> 
-
-            <a href="https://x.com" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2  ">
-              <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
-            </a> 
-
-            <a href="https://dexscreener.com/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2">
-              <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
-            </a> 
-
-    
-
+              <a
+                href="https://dexscreener.com/"
+                target="_blank"
+                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
+              >
+                <img
+                  src="./assets/images/dexscreen.png"
+                  alt="dex"
+                  class="w-[30%] h-auto object-contain"
+                />
+              </a>
+            </div>
           </div>
-          
-          </div>
-
         </div>
- 
-	    </nav>
+      </nav>
 
       <section class="hero relative w-full h-auto max-lg:mt-[-5%] z-10">
-
-        <div class="bg relative w-full h-full left-0
-         top-0">
-         <img src="./assets/images/hero.png" alt="hero image" class="w-full h-full">
+        <div class="bg relative w-full h-full left-0 top-0">
+          <img
+            src="./assets/images/hero.png"
+            alt="hero image"
+            class="w-full h-full"
+          />
         </div>
 
         <div class="hero-text2 absolute w-[20%] right-[30%] top-[30%]">
-           <img src="./assets/images/text-hero2.svg" alt="hero-text" class="w-full h-auto duration-200 hover:scale-125 cursor-pointer">
+          <img
+            src="./assets/images/text-hero2.svg"
+            alt="hero-text"
+            class="w-full h-auto duration-200 hover:scale-125 cursor-pointer"
+          />
         </div>
 
         <div class="hero-text absolute w-[40%] left-[20%] bottom-[10%]">
-           <img src="./assets/images/hero-text.png" alt="hero-text" class="w-full h-auto zoomIn_animation">
+          <img
+            src="./assets/images/hero-text.png"
+            alt="hero-text"
+            class="w-full h-auto zoomIn_animation"
+          />
         </div>
 
-        <div class="border-hero absolute bottom-0 left-0 z-[99] w-full h-[30px] lg:h-[50px] min-[1700px]:h-[80px]">   </div>
-
+        <div
+          class="border-hero absolute bottom-0 left-0 z-[99] w-full h-[30px] lg:h-[50px] min-[1700px]:h-[80px]"
+        ></div>
       </section>
 
-      <section class="about relative w-full h-[500px] lg:h-[800px] min-[1600px]:h-[900px] min-[2000px]:h-[50vw]">
+      <section
+        class="about relative w-full h-[500px] lg:h-[800px] min-[1600px]:h-[900px] min-[2000px]:h-[50vw]"
+      >
+        <div
+          class="absolute content w-[90%] lg:w-[50%] top-[10%] lg:right-[5%] flex flex-col gap-[2vw] max-lg:items-center z-[999]"
+        >
+          <img
+            src="./assets/images/ABOUTDAWAE.svg"
+            alt="about dawae"
+            class="w-full md:w-[80%]"
+          />
+          <p
+            class="itim-regular text-[20px] lg:text-[2vw] leading-[1.5] max-lg:text-center"
+          >
+            DAWAE is not just a coin — it’s a meme-powered movement.Born from
+            the legendary Knuckles meme, we’re here to bring chaos, laughs, and
+            degen energy to Web3.
+          </p>
+          <div
+            class="social flex items-center relative gap-[.5rem] w-full max-lg:justify-center"
+          >
+            <a
+              href="https://web.telegram.org/"
+              target="_blank"
+              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-2 pr-1"
+            >
+              <img
+                src="./assets/images/telegram.png"
+                alt="telegram"
+                class="w-[35%] h-auto object-contain"
+              />
+            </a>
 
-        <div class="absolute content w-[90%] lg:w-[50%] top-[10%] lg:right-[5%] flex flex-col gap-[2vw] max-lg:items-center z-[999]">
-           <img src="./assets/images/ABOUTDAWAE.svg" alt="about dawae" class="w-full md:w-[80%]">
-          <p class="itim-regular text-[20px] lg:text-[2vw] leading-[1.5] max-lg:text-center">DAWAE is not just a coin — it’s a meme-powered movement.Born from the legendary Knuckles meme, we’re here to bring chaos, laughs, and degen energy to Web3.</p>
-          <div class="social flex items-center relative  gap-[.5rem] w-full max-lg:justify-center"> 
+            <a
+              href="https://x.com"
+              target="_blank"
+              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2"
+            >
+              <img
+                src="./assets/images/twitter.png"
+                alt="twitter"
+                class="w-[30%] h-auto object-contain"
+              />
+            </a>
 
-            <a href="https://web.telegram.org/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px]  pb-2 pr-1">
-              <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
-            </a> 
-
-            <a href="https://x.com" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2  ">
-              <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
-            </a> 
-
-            <a href="https://dexscreener.com/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2">
-              <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
-            </a> 
-
-    
-
+            <a
+              href="https://dexscreener.com/"
+              target="_blank"
+              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2"
+            >
+              <img
+                src="./assets/images/dexscreen.png"
+                alt="dex"
+                class="w-[30%] h-auto object-contain"
+              />
+            </a>
           </div>
         </div>
 
         <div class="cloud absolute left-[-5%] bottom-[50%] w-[10%] z-[99]">
-          <img src="./assets/images/cloud.svg" alt="dawae" class="w-full h-auto">
+          <img
+            src="./assets/images/cloud.svg"
+            alt="dawae"
+            class="w-full h-auto"
+          />
         </div>
 
         <div class="dawae absolute left-[2%] bottom-[10%] w-[33%] z-[99]">
-          <img src="./assets/images/dawae-about.png" alt="dawae" class="w-full h-auto float_animation">
+          <img
+            src="./assets/images/dawae-about.png"
+            alt="dawae"
+            class="w-full h-auto float_animation"
+          />
         </div>
 
         <div class="bg absolute bottom-0 left-0 w-full h-auto">
-          <img src="./assets/images/bg-about.png" alt="about bg" class="w-full h-auto">
+          <img
+            src="./assets/images/bg-about.png"
+            alt="about bg"
+            class="w-full h-auto"
+          />
+        </div>
+      </section>
+
+      <section
+        class="tokenomics relative w-full max-md:h-[450px] lg:mt-[-1rem] overflow-hidden z-[99]"
+      >
+        <div class="bg relative w-full h-full left-0 top-0">
+          <img
+            src="./assets/images/bg-token.png"
+            alt="token bg image"
+            class="w-full h-full"
+          />
         </div>
 
+        <div
+          class="dawae-down absolute left-[-4%] top-[10%] lg:top-[30%] w-[20%] falling_character"
+        >
+          <img
+            src="./assets/images/dawae2.png"
+            alt="dawae"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <div
+          class="board w-[90%] min-[500px]:w-[70%] sm:w-[67%] min-[1500px]:w-[63%] min-[1800px]:w-[60%] absolute bottom-[-20%]"
+        >
+          <div class="flower absolute top-[-5%] left-[22%] w-[25%] z-10">
+            <img
+              src="./assets/images/flower.svg"
+              alt="flower"
+              class="w-full shake"
+            />
+          </div>
+
+          <div
+            class="dawae absolute top-[-5%] right-[0%] w-[40%] z-[1] rotate-[-10deg]"
+          >
+            <img
+              src="./assets/images/dawae-about.png"
+              alt="dawae"
+              class="w-full float_animation"
+              style="animation-delay: -1s;"
+            />
+          </div>
+
+          <div class="bg relative w-full h-auto z-[3]">
+            <img
+              src="./assets/images/token-board.png"
+              alt="token"
+              class="w-full"
+            />
+          </div>
+
+          <div
+            class="content absolute w-[90%] h-[23%] left-[49.5%] translate-x-[-50%] top-[26%] rotate-[-1.5deg] flex flex-col justify-between z-10"
+          >
+            <div class="column w-full h-[45%] flex justify-between">
+              <div
+                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
+              >
+                <h3>Buy/sell tax</h3>
+                <p class="opacity-70">0%</p>
+              </div>
+              <div
+                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
+              >
+                <h3>Liquidity burned</h3>
+                <p class="opacity-70">100%</p>
+              </div>
+              <div
+                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
+              >
+                <h3>Ownership</h3>
+                <p class="opacity-70">Revoked</p>
+              </div>
+            </div>
+
+            <div class="token w-full h-[41%] flex justify-between items-center">
+              <div class="flex justify-center flex-col pl-[5%]">
+                <p class="itim-regular uppercase text-[1.6vw] lg:text-[1.2vw]">
+                  Contract Address
+                </p>
+                <span
+                  data-set="AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux"
+                  class="copy-box__text text-[2.5vw] lg:text-[2vw] min-[1700px]:text-[1.7vw]"
+                  >AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux</span
+                >
+              </div>
+              <button
+                class="copy_address w-[10%] h-full cursor-pointer"
+              ></button>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="tokenomics relative w-full max-md:h-[450px]  lg:mt-[-1rem] overflow-hidden z-[99]">
+      <footer
+        class="relative w-full h-[350px] lg:h-[900px] mt-[-1rem] flex justify-center items-center"
+      >
+        <div class="footer-image absolute w-[85%] h-full z-[99] top-[-10%]">
+          <img
+            src="./assets/images/footerImage.png"
+            alt="footer bg image"
+            class="w-full object-cover"
+          />
+        </div>
 
-          <div class="bg relative w-full h-full left-0
-                  top-0">
-                  <img src="./assets/images/bg-token.png" alt="token bg image" class="w-full h-full">
+        <div class="bg absolute w-full h-full left-0 top-0">
+          <img
+            src="./assets/images/bg-footer.png"
+            alt="footer bg image"
+            class="w-full h-full"
+          />
+        </div>
+
+        <div
+          class="rotate w-[200%] h-[200%] absolute z-0 flex justify-center items-center"
+        >
+          <div
+            class="reltive max-w-[2000px] w-full h-auto flex justify-center items-center"
+          >
+            <img
+              src="./assets/images/rotate.png"
+              alt="rotate"
+              class="w-full h-auto relative object-contain rotate_img"
+            />
           </div>
+        </div>
 
-          <div class="dawae-down absolute left-[-4%] top-[10%] lg:top-[30%] w-[20%] falling_character">
-            <img src="./assets/images/dawae2.png" alt="dawae" class="w-full h-auto">
-          </div>
+        <!-- social media -->
+        <div
+          class="social-container absolute w-full z-[999] justify-center h-auto xl:h-[100px] min-[1800px]:h-[120px] left-0 bottom-0 max-w-[100%] flex items-center max-lg:pt-4"
+        >
+          <div
+            class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[100%] justify-center md:justify-between flex-wrap w-full max-w-[100%] xl:max-w-[2100px] gap-2"
+          >
+            <!-- logo -->
+            <div
+              class="left flex relative z-10 justify-center flex-col max-md:items-center max-md:gap-2"
+            >
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                class="w-[100px] md:w-[158px]"
+              />
 
-          <div class="board w-[90%] min-[500px]:w-[70%] sm:w-[67%]  min-[1500px]:w-[63%] min-[1800px]:w-[60%] absolute bottom-[-20%]">
-
-            <div class="flower absolute top-[-5%] left-[22%] w-[25%] z-10">
-              <img src="./assets/images/flower.svg" alt="flower" class="w-full shake">
+              <p class="itim-regular">© DAWAE 2025 - All Rights Reserved</p>
             </div>
 
-            <div class="dawae absolute top-[-5%] right-[0%] w-[40%] z-[1] rotate-[-10deg] ">
-              <img src="./assets/images/dawae-about.png" alt="dawae" class="w-full float_animation" style="animation-delay: -1s;">
-            </div>
+            <!-- social media -->
+            <div
+              class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]"
+            >
+              <div class="social flex items-center relative gap-[.5rem]">
+                <a
+                  href="https://web.telegram.org/"
+                  target="_blank"
+                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-2 pr-1"
+                >
+                  <img
+                    src="./assets/images/telegram.png"
+                    alt="telegram"
+                    class="w-[35%] h-auto object-contain"
+                  />
+                </a>
 
-            <div class="bg relative w-full h-auto z-[3]">
-              <img src="./assets/images/token-board.png" alt="token" class="w-full">
-            </div>
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
+                >
+                  <img
+                    src="./assets/images/twitter.png"
+                    alt="twitter"
+                    class="w-[30%] h-auto object-contain"
+                  />
+                </a>
 
-            <div class="content absolute w-[90%] h-[23%] left-[49.5%] translate-x-[-50%] top-[26%]   rotate-[-1.5deg] flex flex-col justify-between z-10">
-
-              <div class="column w-full h-[45%] flex justify-between">
-                <div class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]">
-                  <h3>Buy/sell tax</h3>
-                  <p class="opacity-70">0%</p>
-                </div>
-                <div class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]">
-                  <h3>Liquidity burned</h3>
-                  <p class="opacity-70">100%</p>
-                </div>
-                <div class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]">
-                  <h3>Ownership</h3>
-                  <p class="opacity-70">Revoked</p>
-                </div>
+                <a
+                  href="https://dexscreener.com/"
+                  target="_blank"
+                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
+                >
+                  <img
+                    src="./assets/images/dexscreen.png"
+                    alt="dex"
+                    class="w-[30%] h-auto object-contain"
+                  />
+                </a>
               </div>
-
-              <div class="token w-full h-[41%] flex justify-between items-center">
-                 <div class="flex justify-center flex-col pl-[5%]">
-                  <p class="itim-regular uppercase text-[1.6vw] lg:text-[1.2vw]">Contract Address</p>
-                  <span data-set="AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux" class="copy-box__text text-[2.5vw] lg:text-[2vw] min-[1700px]:text-[1.7vw]">AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux</span>
-                 </div>
-                 <button class="copy_address w-[10%] h-full cursor-pointer"></button>
-              </div>
-
             </div>
-
           </div>
+        </div>
+      </footer>
+    </main>
 
-      </section>
-
-      <footer class="relative w-full h-[350px] lg:h-[900px] mt-[-1rem] flex justify-center items-center">
-
-          <div class="footer-image  absolute w-[85%] h-full z-[99] top-[-10%]">
-                  <img src="./assets/images/footerImage.png" alt="footer bg image" class="w-full object-cover">
-          </div>
-
-          <div class="bg absolute w-full h-full left-0
-                  top-0">
-                  <img src="./assets/images/bg-footer.png" alt="footer bg image" class="w-full h-full">
-          </div>
-
-           <div class="rotate w-[200%] h-[200%] absolute  z-0 flex justify-center items-center">
-            <div class="reltive max-w-[2000px] w-full h-auto flex justify-center items-center">
-              <img src="./assets/images/rotate.png" alt="rotate" class="w-full h-auto relative object-contain rotate_img"> 
-            </div>
-           </div>
-
-          <!-- social media -->
-           <div class="social-container absolute   w-full z-[999] justify-center h-auto xl:h-[100px] min-[1800px]:h-[120px] left-0 bottom-0 max-w-[100%] flex items-center max-lg:pt-4">
-
-              <div class="nav_container px-[1rem] md:px-[2rem]  flex items-center relative h-[100%] justify-center md:justify-between flex-wrap w-full max-w-[100%] xl:max-w-[2100px] gap-2">
-
-                <!-- logo -->
-                <div class="left flex relative z-10 justify-center flex-col max-md:items-center max-md:gap-2"  >
- 
-                  <img src="./assets/images/logo.svg" alt="logo" class="w-[100px] md:w-[158px]">
-
-                  <p class="itim-regular">© DAWAE 2025 - All Rights Reserved </p>
-          
-                </div>
-          
-
-                <!-- social media -->
-                <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]" >
-
-                <div class="social flex items-center relative  gap-[.5rem]"> 
-
-                  <a href="https://web.telegram.org/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px]  pb-2 pr-1">
-                    <img src="./assets/images/telegram.png" alt="telegram" class="w-[35%] h-auto object-contain">
-                  </a> 
-
-                  <a href="https://x.com" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2  ">
-                    <img src="./assets/images/twitter.png" alt="twitter" class="w-[30%] h-auto object-contain">
-                  </a> 
-
-                  <a href="https://dexscreener.com/" target="_blank" class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2">
-                    <img src="./assets/images/dexscreen.png" alt="dex" class="w-[30%] h-auto object-contain">
-                  </a> 
-
-          
-
-                </div>
-                
-                </div>
-
-              </div>
- 
-	         </div>
-
-      </footer> 
-     </main>
-
-     <!-- aos js library animation -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+      //  scroll animation Effect
+      AOS.init({
+        once: true,
+      });
 
-     //  scroll animation Effect
-    AOS.init({
-        once: true
-    });
-  
-    // copy address
-    const copybtn = document.querySelector(".copy_address");
-    
-     copybtn.addEventListener("click", function() { 
-        let textSpan = document.querySelector('.copy-box__text');
+      // copy address
+      const copybtn = document.querySelector(".copy_address");
+
+      copybtn.addEventListener("click", function () {
+        let textSpan = document.querySelector(".copy-box__text");
         let intervalId;
-            let addressText = document.querySelector(".copy-box__text").getAttribute('data-set');
-            textSpan.innerHTML = 'COPIED';
+        let addressText = document
+          .querySelector(".copy-box__text")
+          .getAttribute("data-set");
+        textSpan.innerHTML = "COPIED";
 
-            if (intervalId) {  
-                clearInterval(intervalId);
-            }
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
 
-            intervalId = setInterval(() => {
-                textSpan.innerHTML = 'AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux'; 
-                clearInterval(intervalId);  
-            }, 2000);
+        intervalId = setInterval(() => {
+          textSpan.innerHTML = "AtKjNndzNBJAo4Z7o23hTMcucBwJX94y94E2Aj82YWux";
+          clearInterval(intervalId);
+        }, 2000);
 
-            navigator.clipboard.writeText(addressText);
-        }); 
-
+        navigator.clipboard.writeText(addressText);
+      });
     </script>
-</body>
+  </body>
 </html>
