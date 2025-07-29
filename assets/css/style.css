@@ -31,9 +31,11 @@ html {
 
 body { 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-repeat: repeat;
-  background-position: 0 0, 50px 50px;
-  background-size: 150px 150px, 200px 200px;
+
+  background-image: url('../images/texture.png');  
+  background-repeat: repeat;     
+  background-size: contain;  
+  background-position: top left; 
 }
 
 .dogica_font {
@@ -87,8 +89,7 @@ body {
 .flex_between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #fcfac2;
+  align-items: center; 
 }
 
 .content-box {
@@ -331,7 +332,26 @@ body {
   background-position: left top;
   background-size: cover;
 }
+
+/* how it was */
+.form input{
+    background: linear-gradient(45deg, #c4c4c4, #c9c7c4); 
+  border-left: 4px solid rgb(0, 0, 0);
+  border-top: 4px solid rgb(0, 0, 0);
+  border-right: 4px solid #c2c2c2;
+  border-bottom: 4px solid #c2c2c2;
+
  
+}
+
+.form button{
+  border-left: 7px solid #c2c2c2;
+  border-top: 7px solid #c2c2c2;
+  box-shadow: inset 4px 2px white, inset 0 -4px white;
+  border-right: 7px solid #707070;
+  border-bottom: 7px solid #7c7c7c;
+  background-color: #d6d4d4;
+}
 
 /* footer */
 .socials .social{
@@ -346,6 +366,18 @@ body {
   border-right: 4px solid #707070;
   border-bottom: 4px solid #7c7c7c;
   background-color: #d6d4d4;
+}
+
+.socials .social img{
+  transition: .2s ease-in-out;
+}
+
+.socials .social:hover img{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .socials .social p{
