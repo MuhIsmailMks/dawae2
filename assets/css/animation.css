@@ -1,0 +1,72 @@
+:root {
+  --coin-size: 150px;
+  --z-unit: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --coin-size: 70px;
+    --z-unit: 0.67px;  
+  }
+}
+ 
+
+#euro {
+  width: var(--coin-size);
+  height: var(--coin-size);
+  margin-left: calc(var(--coin-size) / -2);
+  margin-top: calc(var(--coin-size) / -2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  animation: spin 2.5s linear infinite;
+}
+
+.back,
+.middle,
+.front {
+  width: var(--coin-size);
+  height: var(--coin-size);
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+.back {
+  background-image: url("../images/ethcoin.png");
+  transform: translateZ(0px);
+  z-index: 0;
+}
+ 
+.front {
+  background-image: url("../images/ethcoin.png");
+  transform: translateZ(calc(10 * var(--z-unit)));
+  z-index: 10;
+}
+ 
+.middle {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/133687/faceeuro.png");
+}
+
+/* Layering sisi tengah (1px sampai 9px) */
+.middle:nth-child(2)  { transform: translateZ(calc(1 * var(--z-unit))); }
+.middle:nth-child(3)  { transform: translateZ(calc(2 * var(--z-unit))); }
+.middle:nth-child(4)  { transform: translateZ(calc(3 * var(--z-unit))); }
+.middle:nth-child(5)  { transform: translateZ(calc(4 * var(--z-unit))); }
+.middle:nth-child(6)  { transform: translateZ(calc(5 * var(--z-unit))); }
+.middle:nth-child(7)  { transform: translateZ(calc(6 * var(--z-unit))); }
+.middle:nth-child(8)  { transform: translateZ(calc(7 * var(--z-unit))); }
+.middle:nth-child(9)  { transform: translateZ(calc(8 * var(--z-unit))); }
+.middle:nth-child(10) { transform: translateZ(calc(9 * var(--z-unit))); }
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

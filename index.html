@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon.png"
+      type="image/jpg" 
+      href="./assets/favicon.jpg"
     />
+
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Rammetto+One&display=swap" rel="stylesheet">
+
     <!-- AOS scroll effect cdn -->
     <link
       rel="stylesheet"
@@ -25,423 +23,472 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Dawae</title>
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <title>GameStonk</title>
   </head>
 
-  <body>
-    <main
-      class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#00FFFF]"
-    >
-      <nav
-        class="relative lg:absolute w-full z-[999] justify-center h-[80px] xl:h-[100px] min-[1800px]:h-[120px] left-0 top-0 max-w-[100%] flex items-center"
-      >
-        <div
-          class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[100%] justify-between w-full max-w-[100%] xl:max-w-[2100px]"
-        >
-          <!-- logo -->
-          <div
-            class="left flex relative z-10 justify-center items-center"
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >
-            <div class="logo mr-[1rem] uppercase">
-              <img
-                src="./assets/images/logo.svg"
-                alt="logo"
-                class="w-[100px] md:w-[158px]"
-              />
+  <body class="flex_center bg-[#e0e0e0]">
+    
+    <main class="container_site w-full h-auto relative max-w-[1900px] overflow-hidden flex_center flex-col max-lg:gap-10  gap-20">
+
+      <div class="banner absolute w-full h-auto left-0 top-[-10vw] min-[2000px]:top-[-100px]">
+        <img src="./assets/images/banner.jpg" alt="banner" class="w-auto lg:w-full relative h-[80vh] lg:h-auto object-cover">
+      </div>
+
+      <h1 class="relative bg-[#EC3000] text-center text-white max-[400px]:text-[25px] text-[30px] md:text-[80px] w-full mb-[15vw] min-[1700px]:mb-[200px] max-md:p-2">GameStonk <span class="text-[20px] lg:text-[40px]">Power to the Players</span></h1>
+
+      <div class="coin-container absolute  h-[100px]  w-full flex_center aspect-square left-[0] z-20 top-[70px] lg:top-[210px]">
+
+        <div class="coin absolute left-[10%]">
+          <div id="euro">
+        <article class="back"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+        <article class="front"></article>
+       </div>
+        </div> 
+        <div class="coin absolute right-[12%]">
+          <div id="euro">
+        <article class="back"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+          <article class="middle"></article>
+        <article class="front"></article>
+       </div>
+        </div> 
+
+        <img src="./assets/images/price.jpg" alt="" class="absolute  w-full z-[-1]">
+      </div>
+
+      <section class="container-content relative px-5 lg:px-10 ">
+        <div class="social relative z-10 w-full py-4 flex_center flex-wrap gap-3 xp_font">
+           
+          <div role='button' class='retro-btn primary'>
+              <a href="https://x.com/" class='btn'>
+                <span class='btn-inner'>
+                  <span class='content-wrapper'>
+                    <span class='btn-content'>
+                      <span class='btn-content-inner' label='Twitter'></span> 
+                    </span>
+                  </span>
+                </span>
+              </a>
+          </div>
+           
+          <div role='button' class='retro-btn primary'>
+              <a href="https://web.telegram.org/a/" class='btn'>
+                <span class='btn-inner'>
+                  <span class='content-wrapper'>
+                    <span class='btn-content'>
+                      <span class='btn-content-inner' label='Telegram'></span> 
+                    </span>
+                  </span>
+                </span>
+              </a>
+          </div>
+           
+          <div role='button' class='retro-btn primary'>
+              <a href="https://ethereum.org/en/" target="_blank" class='btn'>
+                <span class='btn-inner'>
+                  <span class='content-wrapper'>
+                    <span class='btn-content'>
+                      <span class='btn-content-inner' label='Etherium'></span> 
+                    </span>
+                  </span>
+                </span>
+              </a>
+          </div>
+           
+          <div role='button' class='retro-btn primary'>
+              <a href="#memes" class='btn'>
+                <span class='btn-inner'>
+                  <span class='content-wrapper'>
+                    <span class='btn-content'>
+                      <span class='btn-content-inner' label='Memes'></span> 
+                    </span>
+                  </span>
+                </span>
+              </a>
+          </div>
+           
+          <div role='button' class='retro-btn primary'>
+              <a href="#Reddit" class='btn'>
+                <span class='btn-inner'>
+                  <span class='content-wrapper'>
+                    <span class='btn-content'>
+                      <span class='btn-content-inner' label='Reddit'></span> 
+                    </span>
+                  </span>
+                </span>
+              </a>
+          </div>
+          
+        </div>
+        <div class="content flex_center flex-col">
+           <h2 class="text-[30px] font-bold w-full bg-[#EC3000] text-white p-4 text-center">🔥 What Is “Gamestonk”?</h2>
+
+           <div class="flex justify-between max-lg:flex-col-reverse p-4 lg:p-10 max-lg:gap-4">
+           
+              <div class="text-[18px] lg:text-[30px] font-medium w-full lg:w-[70%]">
+                <p> "Gamestonk" is a meme term that blends:    </p>
+                <li> GameStop (GME) — the video game retail company.
+
+                </li>
+                <li>             Stonks — a deliberate misspelling of “stocks” used in internet memes to mock or ironically reference financial investments.
+
+                </li>
+              <p> So “Gamestonk” = GameStop stock, memed to the moon 🚀.</p>
+              </div>
+
+              <div class="images flex items-center flex-col w-full lg:w-[30%]">
+                <img src="./assets/images/stonks.gif" alt="stonks gif" class="w-full h-auto">
+                <img src="./assets/images/stonks2.gif" alt="stonks gif" class="w-full h-auto">
+
+              </div>
+
+           </div>
+
+            <div class="contract-address max-sm:w-full sm:px-10 py-3 mb-4 flex_center gap-4 max-w-[90%]"  >
+              <p data-set="0x0000000000000000000000000000000" class="copy-box__text text-ellipsis overflow-hidden max-sm:text-[14px] max-w-[80%] xl:max-w-[100%] max-md:text-[14px] text-[25px]">0x0000000000000000000000000000000</p>
+              <button class="copy_btn cursor-pointer hover:scale-110 duration-150 copy_address">
+                <img loading="lazy" src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto">
+              </button>
+          </div> 
+
+        <div class="rocket absolute right-0 lg:right-[-5%] top-[10%] lg:top-0 w-[30%] lg:w-[20%] flex_center">
+          <img src="./assets/images/game-rocket.png" alt="rocket" class="w-full ">
+        </div>
+
+        </div>
+
+ 
+      </section>
+      
+
+      <div class="sliders w-[100vw] lg:w-full  relative bg-white z-10 flex_center  xp_font">
+            <div class="slide-container z-10 w-full ">
+              <div class="wrapper">
+                  <div class="item item1">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item2" >
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item3">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item4"  >
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item5">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item6">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item7">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item8">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item9">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item10">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item11">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item12">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item13">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item14">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item15">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item16">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+                  <div class="item item17">
+                    <h4>Gamestonk</h4>
+                  </div> 
+                  <div class="item item18">
+                    <h4 style="animation-delay: .3s;">$GMS</h4>
+                  </div> 
+              </div>
+            </div>
+      </div>
+
+      
+      <section id="meme" class="container-content px-5 lg:px-10 ">
+ 
+        <div class="content flex_center flex-col pb-4">
+           <h2 class="text-[30px] font-bold w-full bg-[#EC3000] text-white p-4 text-center">
+            Origins of “Stonks” Meme
+          </h2>
+
+          <div class="about-meme w-[90%] text-[18px] lg:text-[30px] text-center">
+             <p>Before “Gamestonk,” the term “stonks” had been popularized in meme culture since at least 2017. It featured:</p>
+
+             <li>
+              A 3D head character called Meme Man
+             </li>
+             <li>
+              Standing in front of a stock chart going up 
+             </li>
+             <li>
+              Captioned simply: “Stonks”
+             </li>
+
+             <p>
+              It was used to mock clueless investing or celebrate absurd stock success — a kind of satirical financial wisdom.
+             </p>
+          </div>
+
+          <div class="layout-image w-[90%] lg:w-[80%] max-w-[1200px] mt-4">
+            <img src="./assets/images/meme1.jpg" alt="meme">
+            <img src="./assets/images/meme2.png" alt="meme">
+            <img src="./assets/images/meme3.jpg" alt="meme">
+            <img src="./assets/images/meme4.webp" alt="meme">
+            <img src="./assets/images/meme6.jpg" alt="meme"> 
+          </div>
+
+        </div>
+
+      </section>
+      
+      <section id="elonmusk" class="container-content px-5 lg:px-10">
+ 
+        <div class="content flex_center flex-col text-[17px] lg:text-[30px] pb-5 lg:pb-10">
+           <h2 class="text-[30px] font-bold w-full bg-[#EC3000] text-white p-4 text-center">
+           The GME Short Squeeze: How Gamestonk Exploded
+          </h2>
+
+          <div class="about w-[90%] text-center pt-4">
+             <p>In January 2021, retail investors on Reddit’s r/wallstreetbets triggered one of the most dramatic stock events in recent history:</p>
+
+             <li class="w-full text-left">
+             Hedge funds had aggressively shorted GameStop (betting the stock would go down).
+             </li>
+             <li class="w-full text-left">
+             Redditors started buying and holding GME, creating a short squeeze — forcing shorts to buy back stock at rising prices.
+             </li>
+             <li class="w-full text-left">
+              GME skyrocketed from ~$17 in early January to over $480 on January 28.
+             </li>
+          </div>
+ 
+          <h3 class="text-[30px] lg:text-[50px] mt-5 font-semibold text-center">Elon Musk’s Viral Tweet</h3>
+
+          <a href="https://x.com/elonmusk/status/1354174279894642703" target="_blank" class="w-[90%] lg:w-[60%] h-auto mb-4">
+             <img src="./assets/images/elon2.png" alt="elon tweet" class="w-full h-auto ">
+          </a>
+         
+
+          <div class="text-image flex_center flex-wrap gap-4 px-5 lg:px-10">
+            <div class="text w-full lg:w-[60%]">
+               <p>The true ignition point for “Gamestonk” was a tweet by Elon Musk on Jan 26, 2021:</p>
+
+               <a href="https://www.reddit.com/r/wallstreetbets/" class="text-blue-600 underline">“Gamestonk!!”</a>
+
+               <p>That single tweet:</p>
+
+               <li>
+                Drove millions to check out the subreddit.
+               </li>
+               <li>
+                Sent GME shares surging after-hours.
+               </li>
+               <li>Cemented "Gamestonk" as the rallying cry of the retail rebellion.</li>
+            </div>
+            <div class="image w-full lg:w-[38%]">
+              <img src="./assets/images/elon.jpg" alt="elon tweet" class="w-full h-auto">
             </div>
           </div>
 
-          <!-- social media -->
-          <div
-            class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >
-            <div class="social flex items-center relative gap-[.5rem]">
-              <a
-                href="https://t.me/DaWaeEther"
-                target="_blank"
-                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-2 pr-1"
-              >
-                <img
-                  src="./assets/images/telegram.png"
-                  alt="telegram"
-                  class="w-[35%] h-auto object-contain"
-                />
-              </a>
-
-              <a
-                href="https://x.com/DaWaeETH_"
-                target="_blank"
-                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
-              >
-                <img
-                  src="./assets/images/twitter.png"
-                  alt="twitter"
-                  class="w-[30%] h-auto object-contain"
-                />
-              </a>
-
-              <a
-                href="https://dexscreener.com/ethereum/0xee46278b6cf3e470f35d9601451137f41624de64"
-                target="_blank"
-                class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
-              >
-                <img
-                  src="./assets/images/dexscreen.png"
-                  alt="dex"
-                  class="w-[30%] h-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <section class="hero relative w-full h-auto max-lg:mt-[-5%] z-10">
-        <div class="bg relative w-full h-full left-0 top-0">
-          <img
-            src="./assets/images/hero.png"
-            alt="hero image"
-            class="w-full h-full"
-          />
         </div>
 
-        <div class="hero-text2 absolute w-[20%] right-[30%] top-[30%]">
-          <img
-            src="./assets/images/text-hero2.svg"
-            alt="hero-text"
-            class="w-full h-auto duration-200 hover:scale-125 cursor-pointer"
-          />
-        </div>
-
-        <div class="hero-text absolute w-[40%] left-[20%] bottom-[10%]">
-          <img
-            src="./assets/images/hero-text.png"
-            alt="hero-text"
-            class="w-full h-auto zoomIn_animation"
-          />
-        </div>
-
-        <div
-          class="border-hero absolute bottom-0 left-0 z-[99] w-full h-[30px] lg:h-[50px] min-[1700px]:h-[80px]"
-        ></div>
       </section>
 
-      <section
-        class="about relative w-full h-[500px] lg:h-[800px] min-[1600px]:h-[900px] min-[2000px]:h-[50vw]"
-      >
-        <div
-          class="absolute content w-[90%] lg:w-[50%] top-[10%] lg:right-[5%] flex flex-col gap-[2vw] max-lg:items-center z-[999]"
-        >
-          <img
-            src="./assets/images/ABOUTDAWAE.svg"
-            alt="about dawae"
-            class="w-full md:w-[80%]"
-          />
-          <p
-            class="itim-regular text-[20px] lg:text-[2vw] leading-[1.5] max-lg:text-center"
-          >
-            DAWAE is not just a coin — it’s a meme-powered movement.Born from
-            the legendary Knuckles meme, we’re here to bring chaos, laughs, and
-            degen energy to Web3.
-          </p>
-          <div
-            class="social flex items-center relative gap-[.5rem] w-full max-lg:justify-center"
-          >
-            <a
-              href="https://t.me/DaWaeEther"
-              target="_blank"
-              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-2 pr-1"
-            >
-              <img
-                src="./assets/images/telegram.png"
-                alt="telegram"
-                class="w-[35%] h-auto object-contain"
-              />
-            </a>
+      <!-- <div class="image flex_center container-content px-10">
+        <img src="./assets/images/banner.jpg" alt="elon tweet" class="w-[100%] h-auto border-[#EC3000] border-2">
+      </div> -->
 
-            <a
-              href="https://x.com/DaWaeETH_"
-              target="_blank"
-              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2"
-            >
-              <img
-                src="./assets/images/twitter.png"
-                alt="twitter"
-                class="w-[30%] h-auto object-contain"
-              />
-            </a>
+      <section id="HowItWas" class="flex_center flex-wrap gap-4 w-full">
+         <div class="container w-full md:w-[60%] lg:w-[55%]">
+           <div class="container-content max-lg:px-4">
+             <div class="content flex_center flex-col text-[17px] lg:text-[30px] pb-5 lg:pb-10">
+               <h2 class="text-[30px] font-bold w-full bg-[#EC3000] text-white p-4 text-center">
+           The GME Short Squeeze: How Gamestonk Exploded
+          </h2>
 
-            <a
-              href="https://dexscreener.com/ethereum/0xee46278b6cf3e470f35d9601451137f41624de64"
-              target="_blank"
-              class="social-link duration-300 hover:scale-110 relative w-[88.66px] lg:w-[139px] pb-1 lg:pb-2"
-            >
-              <img
-                src="./assets/images/dexscreen.png"
-                alt="dex"
-                class="w-[30%] h-auto object-contain"
-              />
-            </a>
+          <div class="about w-[90%] pt-4">
+             <p>“Gamestonk” quickly became a symbolic term:</p>
+
+             <li>
+             Online Identity: A badge of honor for retail traders rebelling against Wall Street.
+             </li>
+             <li>
+             Meme Warfare: Flooding Twitter, TikTok, and Discord with memes about “holding the line,” “diamond hands,” and “stonks only go up.”
+             </li>
+             <li>
+              Irony & Power: It captured the absurdity of a broken financial system where coordinated meme buying could topple billion-dollar hedge funds.
+             </li>
           </div>
+ 
+        
         </div>
 
-        <div class="cloud absolute left-[-5%] bottom-[50%] w-[10%] z-[99]">
-          <img
-            src="./assets/images/cloud.svg"
-            alt="dawae"
-            class="w-full h-auto"
-          />
-        </div>
-
-        <div class="dawae absolute left-[2%] bottom-[10%] w-[33%] z-[99]">
-          <img
-            src="./assets/images/dawae-about.png"
-            alt="dawae"
-            class="w-full h-auto float_animation"
-          />
-        </div>
-
-        <div class="bg absolute bottom-0 left-0 w-full h-auto">
-          <img
-            src="./assets/images/bg-about.png"
-            alt="about bg"
-            class="w-full h-auto"
-          />
-        </div>
+           </div> 
+         </div>
+         <div class="container w-[92%] md:w-[60%] lg:w-[40%]">
+          <div class="container-content flex_center flex-col border-[#EC3000] border-2">
+            <img src="./assets/images/meme5.jpg" alt="meme" class="w-full h-auto"> 
+          </div> 
+         </div>
       </section>
 
-      <section
-        class="tokenomics relative w-full max-md:h-[450px] lg:mt-[-1rem] overflow-hidden z-[99]"
-      >
-        <div class="bg relative w-full h-full left-0 top-0">
-          <img
-            src="./assets/images/bg-token.png"
-            alt="token bg image"
-            class="w-full h-full"
-          />
-        </div>
+      <section id="culture" class="relative z-10 container-content px-5 lg:px-10">
+ 
+        <div class="content flex_center flex-col gap-6 text-[17px] lg:text-[30px] pb-5 lg:pb-10">
+           <h2 class="text-[30px] font-bold w-full bg-[#EC3000] text-white p-4 text-center">
+           Cultural Legacy
+          </h2>
 
-        <div
-          class="dawae-down absolute left-[-4%] top-[10%] lg:top-[30%] w-[20%] falling_character"
-        >
-          <img
-            src="./assets/images/dawae2.png"
-            alt="dawae"
-            class="w-full h-auto"
-          />
-        </div>
-
-        <div
-          class="board w-[90%] min-[500px]:w-[70%] sm:w-[67%] min-[1500px]:w-[63%] min-[1800px]:w-[60%] absolute bottom-[-20%]"
-        >
-          <div class="flower absolute top-[-5%] left-[22%] w-[25%] z-10">
-            <img
-              src="./assets/images/flower.svg"
-              alt="flower"
-              class="w-full shake"
-            />
+          <div class="about w-[90%] text-center pt-4">
+ 
+             <li class="w-full text-left">
+             Movies & Docs: The story has inspired content like Netflix’s “Eat the Rich: The GameStop Saga”, Dumb Money (2023), and tons of YouTube documentaries.
+             </li>
+             <li class="w-full text-left">
+             Language Shift: “Stonks” and “Gamestonk” are now entrenched in Gen Z/online investor slang.
+             </li>
+             <li class="w-full text-left">
+              WallStreetBets Lore: “Gamestonk” is part of a lexicon that includes “tendies,” “YOLO,” “paper hands,” “diamond hands,” and “to the moon.”
+             </li>
           </div>
 
-          <div
-            class="dawae absolute top-[-5%] right-[0%] w-[40%] z-[1] rotate-[-10deg]"
-          >
-            <img
-              src="./assets/images/dawae-about.png"
-              alt="dawae"
-              class="w-full float_animation"
-              style="animation-delay: -1s;"
-            />
+          <div class="image w-[90%] h-auto">
+            <img src="./assets/images/banner2.jpg" alt="banner" class="w-full h-auto">
           </div>
 
-          <div class="bg relative w-full h-auto z-[3]">
-            <img
-              src="./assets/images/token-board.png"
-              alt="token"
-              class="w-full"
-            />
-          </div>
+          <h2 class="text-[30px] lg:text-[60px] font-bold w-full  text-black p-4 text-center mt-7">
+           Summary
+          </h2>
 
-          <div
-            class="content absolute w-[90%] h-[23%] left-[49.5%] translate-x-[-50%] top-[26%] rotate-[-1.5deg] flex flex-col justify-between z-10"
-          >
-            <div class="column w-full h-[45%] flex justify-between">
-              <div
-                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
-              >
-                <h3>Buy/sell tax</h3>
-                <p class="opacity-70">0%</p>
-              </div>
-              <div
-                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
-              >
-                <h3>Liquidity burned</h3>
-                <p class="opacity-70">100%</p>
-              </div>
-              <div
-                class="col w-[33%] flex justify-center flex-col items-center text-[2.5vw] lg:text-[1.6vw]"
-              >
-                <h3>Ownership</h3>
-                <p class="opacity-70">Revoked</p>
-              </div>
+          <div class="flex_center w-[90%] lg:w-[65%] border-black border-2 text-[12px] md:text-[18px]">
+            <div class="Term h-full border-r-2 border-black w-[35%] ">
+              <h3 class="text-[16px] md:text-[20px] font-bold w-full border-b-2 border-black bg-[#5171A7] text-white">
+                <span class="pl-4">Term</span>
+              </h3>
+              <p class="pl-4 max-lg:h-[60px] md:my-1 max-md:pt-2">Gamestonk</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Origin</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Virality</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Symbolism</p> 
+
             </div>
-
-            <div class="token w-full h-[41%] flex justify-between items-center">
-              <div class="flex justify-center flex-col pl-[5%]">
-                <p class="itim-regular uppercase text-[1.6vw] lg:text-[1.2vw]">
-                  Contract Address
-                </p>
-                <span
-                  data-set="0xcF0d68a76194778B5B0faA3089d85E92166f8c80"
-                  class="copy-box__text text-[2.5vw] lg:text-[2vw] min-[1700px]:text-[1.7vw]"
-                  >0xcF0d68a76194778B5B0faA3089d85E92166f8c80</span
-                >
-              </div>
-              <button
-                class="copy_address w-[10%] h-full cursor-pointer"
-              ></button>
+            <div class="Meaning w-[65%]   border-black">
+              <h3 class="text-[16px] md:text-[20px] font-bold w-full border-b-2 border-black bg-[#5171A7] text-white ">
+                <span class="pl-4">Meaning</span>
+              </h3>
+              <p class="pl-4 max-lg:h-[60px] md:my-1 max-md:pt-2">GameStop stock, memed — “stonks” version</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Meme fusion + GME short squeeze</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Fueled by Reddit, Elon Musk, meme culture</p> 
+              <p class="pl-4 max-lg:h-[60px] md:my-1">Anti-Wall Street, meme power, financial absurdity</p> 
             </div>
           </div>
+ 
         </div>
+
       </section>
 
-      <footer
-        class="relative w-full h-[350px] lg:h-[900px] mt-[-1rem] flex justify-center items-center"
-      >
-        <div class="footer-image absolute w-[85%] h-full z-[99] top-[-10%]">
-          <img
-            src="./assets/images/footerImage.png"
-            alt="footer bg image"
-            class="w-full object-cover"
-          />
-        </div>
+      <div class="h-[1000px] lg:h-[700px] w-full relative flex_center flex-col">
+        
+        <img src="./assets/images/moneybg.jpg" alt="" class="absolute w-full h-full object-cover lg:h-auto">
 
-        <div class="bg absolute w-full h-full left-0 top-0">
-          <img
-            src="./assets/images/bg-footer.png"
-            alt="footer bg image"
-            class="w-full h-full"
-          />
-        </div>
-
-        <div
-          class="rotate w-[200%] h-[200%] absolute z-0 flex justify-center items-center"
-        >
-          <div
-            class="reltive max-w-[2000px] w-full h-auto flex justify-center items-center"
-          >
-            <img
-              src="./assets/images/rotate.png"
-              alt="rotate"
-              class="w-full h-auto relative object-contain rotate_img"
-            />
+        <div class="socials w-full md:w-[90%] relative z-10 flex_center xp_font ">
+          <div class="container-content flex_center">
+            <div class="content flex_center flex-wrap gap-6 text-[17px] lg:text-[30px] p-5 h-[400px]"> 
+              <a href="https://x.com/" class="social flex_center flex-col gap-4">
+                 <div class="close w-full h-[30px] bg-[#5171A7] flex justify-end items-center px-4">
+                  <span class="text_bold text-[20px] dogica_font text-white">X</sp>
+                 </div>
+                  <div class="logo w-[50%] aspect-square flex_center">
+                    <img src="./assets/images/twitterLogoBlack.svg" alt="logo" class="w-[70%]">
+                 </div>
+                
+                <p class="text-[18px] md:text-[25px]">Twitter</p>
+              </a>
+              <a href="https://web.telegram.org/a/" class="social flex_center flex-col gap-4">
+                 <div class="close w-full h-[30px] bg-[#5171A7] flex justify-end items-center px-4">
+                  <span class="text_bold text-[20px] dogica_font text-white">X</sp>
+                 </div>
+                  <div class="logo w-[50%] aspect-square flex_center">
+                   <img src="./assets/images/telegram-black.svg" alt="logo" class="w-[60%]">
+                 </div>
+                 
+                <p>Telegram</p>
+              </a>
+              <a href="https://ethereum.org/en/" target="_blank" class="social flex_center flex-col gap-4">
+                 <div class="close w-full h-[30px] bg-[#5171A7] flex justify-end items-center px-4">
+                  <span class="text_bold text-[20px] dogica_font text-white">X</sp>
+                 </div>
+                 <div class="logo w-[50%] aspect-square flex_center">
+                   <img src="./assets/images/eth.png" alt="logo" class="w-[50%]">
+                 </div>
+                <p>Ethereum</p>
+              </a>
+              <a rel="noreferrer"  href="https://www.dextools.io/app/en/ether/pair-explorer" target="_blank" class="social flex_center flex-col gap-4">
+                 <div class="close w-full h-[30px] bg-[#5171A7] flex justify-end items-center px-4">
+                  <span class="text_bold text-[20px] dogica_font text-white">X</sp>
+                 </div>
+                 <div class="logo w-[50%] aspect-square flex_center">
+                   <img src="./assets/images/dex_black.png" alt="logo" class="w-[50%]">
+                 </div>
+                <p>Dextools</p>
+              </a>
+           </div>
           </div>
         </div>
 
-        <!-- social media -->
-        <div
-          class="social-container absolute w-full z-[999] justify-center h-auto xl:h-[100px] min-[1800px]:h-[120px] left-0 bottom-0 max-w-[100%] flex items-center max-lg:pt-4"
-        >
-          <div
-            class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[100%] justify-center md:justify-between flex-wrap w-full max-w-[100%] xl:max-w-[2100px] gap-2"
-          >
-            <!-- logo -->
-            <div
-              class="left flex relative z-10 justify-center flex-col max-md:items-center max-md:gap-2"
-            >
-              <img
-                src="./assets/images/logo.svg"
-                alt="logo"
-                class="w-[100px] md:w-[158px]"
-              />
+        <footer class="bg-[#5171A7] absolute bottom-0 text-white w-full h-auto  flex_center flex-col">
 
-              <p class="itim-regular">© DAWAE 2025 - All Rights Reserved</p>
-            </div>
-
-            <!-- social media -->
-            <div
-              class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[.75rem] md:gap-[1rem]"
-            >
-              <div class="social flex items-center relative gap-[.5rem]">
-                <a
-                  href="https://t.me/DaWaeEther"
-                  target="_blank"
-                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-2 pr-1"
-                >
-                  <img
-                    src="./assets/images/telegram.png"
-                    alt="telegram"
-                    class="w-[35%] h-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://x.com/DaWaeETH_"
-                  target="_blank"
-                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
-                >
-                  <img
-                    src="./assets/images/twitter.png"
-                    alt="twitter"
-                    class="w-[30%] h-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://dexscreener.com/ethereum/0xee46278b6cf3e470f35d9601451137f41624de64"
-                  target="_blank"
-                  class="social-link duration-300 hover:scale-110 relative w-[58.66px] lg:w-[75px] pb-1 lg:pb-2"
-                >
-                  <img
-                    src="./assets/images/dexscreen.png"
-                    alt="dex"
-                    class="w-[30%] h-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <p>@2023 GameStonk | All rights reserved</p>
+        
       </footer>
-    </main>
 
+      </section>
+          
+
+ 
+ 
+    </main>
+ 
+ 
     <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-
-      //  scroll animation Effect
-      AOS.init({
-        once: true,
-      });
-
-      // copy address
-      const copybtn = document.querySelector(".copy_address");
-
-      copybtn.addEventListener("click", function () {
-        let textSpan = document.querySelector(".copy-box__text");
-        let intervalId;
-        let addressText = document
-          .querySelector(".copy-box__text")
-          .getAttribute("data-set");
-        textSpan.innerHTML = "COPIED";
-
-        if (intervalId) {
-          clearInterval(intervalId);
-        }
-
-        intervalId = setInterval(() => {
-          textSpan.innerHTML = "0xcF0d68a76194778B5B0faA3089d85E92166f8c80";
-          clearInterval(intervalId);
-        }, 2000);
-
-        navigator.clipboard.writeText(addressText);
-      });
-      
-    </script>
+  
+    <script src="./assets/index.js"></script>
+    
   </body>
 </html>
