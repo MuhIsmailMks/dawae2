@@ -1,19 +1,10 @@
 
 //  scroll animation Effect
 document.addEventListener("DOMContentLoaded", function () {
-    // AOS.init({
-    //     once: true,
-    // });
-
-    // // nav handler
-    // const menu_btn = document.querySelector('nav .menu-button');
-    // const menu_container = document.querySelector('nav .menu_container');
-
-    // menu_btn.addEventListener('click', () => {
-    //     menu_btn.classList.toggle('active')
-    //     menu_container.classList.toggle('active')
-    // })
-
+    AOS.init({
+        once: true,
+    });
+ 
 
     const items = document.querySelectorAll('.wrapper .item');
     const totalItems = items.length; 

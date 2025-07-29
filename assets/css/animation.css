@@ -70,3 +70,66 @@
     transform: rotateY(360deg);
   }
 }
+
+
+
+/* animation */
+.rotate_animation {
+  animation: rotate_animation 10s linear infinite;
+}
+
+@keyframes rotate_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.float_animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+ 
+
+.rotate_animation {
+  animation: rotate_animation 1s infinite alternate ease-in-out;
+}
+
+.rotate_animation2 {
+  animation: rotate_animation2 1s infinite alternate ease-in-out;
+}
+
+@keyframes rotate_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotate_animation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
