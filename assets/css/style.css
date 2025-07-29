@@ -79,7 +79,6 @@ body {
   filter: brightness(0) invert(0);
 }
  
-
 .flex_center {
   display: flex;
   justify-content: center;
@@ -130,7 +129,7 @@ body {
 }
 
 .retro-btn.primary .btn .btn-inner .content-wrapper .btn-content {
-  background: linear-gradient(45deg, #cecece, #a59c8b);
+  /* background: linear-gradient(45deg, #cecece, #a59c8b); */
   border-left: 2px solid rgb(0, 0, 0);
   border-top: 2px solid rgb(0, 0, 0);
   border-right: 2px solid #fcfcfc;
@@ -430,12 +429,7 @@ body {
   .content-box {
     padding: 15px;
   }
-
-  .box_social a {
-    height: 60px;
-    width: 60px;
-    border-radius: 10px;
-  }
+ 
 
   .title.small {
     font-size: 7vw;

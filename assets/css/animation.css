@@ -133,3 +133,25 @@
     transform: rotate(-10deg);
   }
 }
+
+.button_color_animation {
+  animation: button_color_animation 1s infinite alternate ease-in-out;
+}
+
+@keyframes button_color_animation {
+  0% {
+    background-color: #a0a0a0;
+  }
+  25% {
+    background-color: #f31111;
+  }
+  50% {
+    background-color: rgb(7, 7, 238);
+  }
+  75% {
+    background-color: #f51111;
+  }
+  100% {
+    background-color: #a0a0a0;
+  }
+}
