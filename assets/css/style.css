@@ -324,6 +324,26 @@ body {
   border: 2px solid var(--primary-clr);
 }
 
+/* tokenomics */
+.tokens .token{
+  width: 250px;
+  height: 200px;  
+  position: relative; 
+  padding-bottom: 1rem;
+
+  border-left: 4px solid #c2c2c2;
+  border-top: 4px solid #c2c2c2;
+  box-shadow: inset 4px 2px white, inset 0 -4px white;
+  border-right: 4px solid #707070;
+  border-bottom: 4px solid #7c7c7c;
+  background-color: #d6d4d4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* memes_footer */
 .memes_footer {
   background-image: url("../images/texture2.png");
@@ -446,6 +466,11 @@ body {
 
   .item h4 {
     font-size: 2rem; 
+  }
+
+  .tokens .token{
+    width: 45%;
+    height: 120px;  
   }
 
   .layout-image {
